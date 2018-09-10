@@ -1,16 +1,22 @@
 <h2>Log In</h2>
 
+{{#each messages}}
+    <div class="{{@key}}-message">
+        {{this}}
+    </div>
+{{/each}}
+
 <form action="/process-login" method="POST">
   
   <label>
     Email:
-    <input type="email" name="email" placeholder="leia@resistance.com"/>
+    <input type="email" name="email" placeholder="mail@example.com"/>
   </label>
   <br/>
 
   <label>
     Password:
-    <input type="password" name="originalPassword" placeholder="it's a secret"/>
+    <input type="password" name="originalPassword" placeholder="It's a secret..."/>
   </label>
   <br/>
 
