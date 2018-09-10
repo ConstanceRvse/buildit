@@ -1,25 +1,34 @@
-<h2>Choose your template</h2>
+<h2>Choose a name and your template</h2>
 
 <form action="/process-choose-template" method="POST">
+
+  <label>
+    Your website's name:
+    <input type="text" name="title" placeholder="My website..."/>
+  </label>
+  <br/>
+
+  <label>Our templates</label>
+  <br/>
 
   <div class="container">
     <div class="row">
 
-      <div class="col-sm-3">
+      <div class="col-sm">
         <label for="template1">
           <img src="../../images/template1.png" />
           <input type="radio" id="template1" name="template" checked />
         </label>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-sm">
         <label for="template2">
           <img src="../../images/template2.png" />
           <input type="radio" id="template2" name="template"/>
         </label>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-sm">
         <label for="template3">
           <img src="../../images/template3.png" />
           <input type="radio" id="template3" name="template"/>
