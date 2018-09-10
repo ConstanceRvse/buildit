@@ -36,7 +36,7 @@ router.post("/process-login", (req, res, next) => {
     // "userDoc" will be empty if the email is wrong (no document in the DB)
     if(!userDoc){
       // save a flash message to display in the LOGIN page
-      req.flash("error", "Incorrect email. ☠️")
+      req.flash("error", "Incorrect email. ☠️");
       res.redirect("/login");
       return; // use return instead of a big else
     }
@@ -45,7 +45,7 @@ router.post("/process-login", (req, res, next) => {
     const { encryptedPassword } = userDoc;
     // compareSync() will return false if the originalPassword is wrong
     if (!bcrypt.compareSync(originalPassword, encryptedPassword)) {
-        req.flash("error", "Password is wrong! 🔐")
+        req.flash("error", "Password is wrong! 🔐");
         res.redirect("/login");
         return;
     }
@@ -53,7 +53,7 @@ router.post("/process-login", (req, res, next) => {
     // req.logIn() is a passport method that triggers "serializeUser()"
     // that saves the USER ID in the session
     req.logIn(userDoc, () => {
-      req.flash("success", "Log in success! 👍")
+      req.flash("success", "Logged in successfully! 👍")
       // go to the home page if the password is Good
       res.redirect("/");
     });
