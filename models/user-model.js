@@ -11,7 +11,7 @@ const userSchema = new Schema ({
     unique: true,
     match: /^.+@.+\..+$/
   },
-  encryptedPassword: { type: String },
+  encryptedPassword: { type: String, minlength: 8 },
 }, {
   // additional settings for Schema constructor
   timestamps: true
