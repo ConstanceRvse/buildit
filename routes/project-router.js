@@ -14,6 +14,17 @@ router.get("/categories", (req, res, next) => {
   res.render("project-views/categories.hbs");
 });
 
+router.post("/process-choose-category", (req, res, next) => {
+  const { category } = req.body;
+  const owner = req.user._id;
+
+  Project.create({ category, owner })
+    .then(projectDoc => {
+      res.redirect("/templates");
+    })
+    .catch(err => next(err));
+});
+
 router.get("/colors", (req, res, next) => {
   res.render("project-views/colors.hbs");
 });
