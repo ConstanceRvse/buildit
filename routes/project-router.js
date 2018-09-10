@@ -10,6 +10,12 @@ router.get("/my-projects", (req, res, next) =>{
   res.render("project-views/my-projects.hbs");
 });
 
+router.get("/categories", (req, res, next) => {
+  res.render("project-views/categories.hbs");
+});
 
+router.get("/colors", (req, res, next) => {
+  res.render("project-views/colors.hbs");
+});
 
 module.exports = router;
