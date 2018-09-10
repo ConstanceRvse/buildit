@@ -18,4 +18,8 @@ router.get("/colors", (req, res, next) => {
   res.render("project-views/colors.hbs");
 });
 
+router.get("/templates", (req, res, next) => {
+  res.render("project-views/templates.hbs");
+});
+
 module.exports = router;
