@@ -17,6 +17,10 @@
       <a href="/">Home</a>
       <a href="/login">Log In</a>
       <a href="/signup">Sign Up</a>
+      {{#if currentUser}}
+        <b>{{currentUser.email}}</b>
+        <a href="/logout">Log Out</a>
+      {{/if}}
     </nav>
   </header>
 

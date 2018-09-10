@@ -61,4 +61,11 @@ router.post("/process-login", (req, res, next) => {
   .catch(err => next(err));
 });
 
+router.get("/logout", (req, res, next) => {
+  // "req.logOut()" is a Passport method that removes the USER ID from session
+  req.logOut();
+  req.flash("success", "Logged out successfully");
+  res.redirect("/");
+});
+
 module.exports = router;
