@@ -18,7 +18,7 @@ router.post("/process-signup", (req, res, next) => {
   User.create({ fullName, email, encryptedPassword })
     .then(userDoc => { 
       req.flash("success", "Sign up success! 👏");
-      res.redirect("/")
+      res.redirect("/my-projects")
     })
     .catch(err => next(err));
 });
@@ -48,7 +48,7 @@ router.post("/process-login", (req, res, next) => {
 
     req.logIn(userDoc, () => {
       req.flash("success", "Logged in successfully! 👍")
-      res.redirect("/");
+      res.redirect("/my-projects");
     });
   })
   .catch(err => next(err));
