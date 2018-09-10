@@ -14,4 +14,8 @@ router.get("/categories", (req, res, next) => {
   res.render("project-views/categories.hbs");
 });
 
+router.get("/templates", (req, res, next) => {
+  res.render("project-views/templates.hbs");
+});
+
 module.exports = router;
