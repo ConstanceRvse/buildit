@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 
 const projectSchema = new Schema ({
   title: {type: String, required: true},
+  category: { type: String }, 
   image: { type: String },
   template: { type: String },
   color: { type: String },
