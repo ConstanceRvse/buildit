@@ -1,4 +1,18 @@
 <h2>My projects</h2>
 
+<div class="projects-container">
+  <ul>
+    {{#each projectArray}}
+      <li>
+        <img src="{{ this.template }}">
+        <p>{{ this.title }}</p>
+        <button>Details</button>
+        <button>Edit</button>
+      </li>
+    {{/each}}
+  </ul>
+</div>
+
+
 <a href="/categories">Add A New Project</a>
 

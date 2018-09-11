@@ -6,8 +6,18 @@ const User = require("../models/user-model.js");
 
 const router = express.Router();
 
+// router.get("/my-projects", (req, res, next) =>{
+//   res.render("project-views/my-projects.hbs");
+// });
+
 router.get("/my-projects", (req, res, next) =>{
-  res.render("project-views/my-projects.hbs");
+
+  Project.find()
+  .then(projectResults => {
+    res.locals.projectArray = projectResults;
+    res.render("project-views/my-projects.hbs");
+  })
+  .catch( err => next(err));
 });
 
 router.get("/categories", (req, res, next) => {
@@ -39,7 +49,6 @@ router.post("/colors/:projectId", (req, res, next) => {
       res.render("project-views/colors.hbs");
     })
     .catch(err => next (err));
-
 });
 
 
