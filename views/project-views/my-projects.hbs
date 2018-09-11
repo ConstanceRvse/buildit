@@ -6,8 +6,8 @@
       <li>
         <img src="{{ this.template }}">
         <p>{{ this.title }}</p>
-        <button>Details</button>
-        <button>Edit</button>
+        <a href="/project-details/{{ this._id }}">Details</a>
+        <a href="/templates">Edit</a>
       </li>
     {{/each}}
   </ul>
