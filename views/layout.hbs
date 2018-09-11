@@ -15,21 +15,48 @@
 
   <header>
     <nav>
-      <a href="/">Home</a>
-      <br/>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        {{#if currentUser}}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{currentUser.fullName}}</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">New Project</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">My Projects</a>
+              <a class="dropdown-item" href="#">Settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+        </li>
 
-      {{#if currentUser}}
-        <b>Bienvenue, {{currentUser.fullName}}</b>
-        <br/>
-        <a href="/my-projects">My Projects</a>
-        <a href="/settings">Settings</a>
-        <a href="/logout">Log Out</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        {{!-- <li class="nav-item">
+          <a class="nav-link" href="/my-projects">My Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/settings">Settings</a>
+        </li> --}}
+        {{!-- <li class="nav-item">
+          <a class="nav-link" href="/logout">Log Out</a>
+        </li> --}}
 
       {{else}}
-        <a href="/signup">Sign Up</a>
-        <a href="/login">Log In</a>
-      {{/if}}
+        <li class="nav-item">
+          <a class="nav-link" href="/signup">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Log In</a>
+        </li>
+        {{/if}}
+      </ul>
     </nav>
+
+    <h4>Welcome back, <b>{{currentUser.fullName}}!</b></h4>
   </header>
 
   {{{body}}}
