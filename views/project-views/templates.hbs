@@ -1,6 +1,6 @@
 <h2>Choose a name and your template</h2>
 
-<form action="/colors/{{ projectItem._id }}" method="POST">
+<form action="/colors/{{ projectId }}" method="POST">
 
   <label>
     Your website's name:
@@ -42,6 +42,6 @@
 </form>
 
 <form action="/categories" method="POST">
-  <input type="hidden" value="{{ projectItem._id }}" name="projectId"/>
+  <input type="hidden" value="{{ projectId }}" name="projectId"/>
   <button class="btn btn-outline-primary">Return</button>
 </form>

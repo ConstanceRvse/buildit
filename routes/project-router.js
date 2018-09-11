@@ -46,10 +46,15 @@ router.post("/templates", (req, res, next) => {
 
   Project.create({ category, owner })
     .then(projectDoc => {
-      res.locals.projectItem = projectDoc;
+      res.locals.projectId = projectDoc._id;
       res.render("project-views/templates.hbs");
     })
     .catch(err => next(err));
+});
+
+router.get("/templates/:projectId", (req, res, next) => {
+  res.locals.projectId = req.params.projectId;
+  res.render("project-views/templates.hbs");
 });
 
 router.post("/colors/:projectId", (req, res, next) => {
@@ -62,13 +67,14 @@ router.post("/colors/:projectId", (req, res, next) => {
     { runValidators: true }
   )
     .then(projectDoc => {
-      res.locals.projectItem = projectDoc;
+      res.locals.projectId = projectDoc._id;
       res.render("project-views/colors.hbs");
     })
     .catch(err => next (err));
 });
 
 router.get("/colors/:projectId", (req, res, next) => {
+  res.locals.projectId = req.params.projectId;
   res.render("project-views/colors.hbs");
 });
 
