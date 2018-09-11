@@ -16,4 +16,12 @@ a {
 .error-message {
   color: crimson; }
 
+.fonts-img {
+  border: 1px solid lightgray;
+  border-radius: 5px; }
+
+.btn-primary a {
+  color: white;
+  text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */

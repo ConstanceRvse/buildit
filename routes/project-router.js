@@ -33,4 +33,8 @@ router.get("/templates", (req, res, next) => {
   res.render("project-views/templates.hbs");
 });
 
+router.get("/fonts", (req, res, next) => {
+  res.render("project-views/fonts.hbs");
+});
+
 module.exports = router;
