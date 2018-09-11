@@ -1,53 +1,53 @@
 <h2>Pick a Font Association</h2>
 
-<form action="/process-fonts" method="POST">
+<form action="/project-details/{{ projectItem._id }}" method="POST">
   <div class="container">
     <div class="row">
 
       <div class="col-sm">
         <label for="font1">
           <img class="fonts-img" src="../../images/font1.png">
-          <input type="radio" id="fonts1" name="fonts" checked />
+          <input type="radio" id="fonts1" name="fonts" value="../../images/font1.png" checked />
         </label>
       </div>
 
       <div class="col-sm">
         <label for="font2">
           <img class="fonts-img" src="../../images/font2.png">
-          <input type="radio" id="fonts2" name="fonts" />
+          <input type="radio" id="fonts2" name="fonts" value="../../images/font2.png" />
         </label>
       </div>
 
       <div class="col-sm">
         <label for="font3">
           <img class="fonts-img" src="../../images/font3.png">
-          <input type="radio" id="fonts3" name="fonts" />
+          <input type="radio" id="fonts3" name="fonts" value="../../images/font3.png" />
         </label>
       </div>
 
       <div class="col-sm">
         <label for="font4">
           <img class="fonts-img" src="../../images/font4.png">
-          <input type="radio" id="fonts4" name="fonts" />
+          <input type="radio" id="fonts4" name="fonts" value="../../images/font4.png" />
         </label>
       </div>
 
       <div class="col-sm">
         <label for="font5">
           <img class="fonts-img" src="../../images/font5.png">
-          <input type="radio" id="fonts5" name="fonts" />
+          <input type="radio" id="fonts5" name="fonts" value="../../images/font5.png" />
         </label>
       </div>
 
       <div class="col-sm">
         <label for="font6">
           <img class="fonts-img" src="../../images/font6.png">
-          <input type="radio" id="fonts6" name="fonts" />
+          <input type="radio" id="fonts6" name="fonts" value="../../images/font6.png" />
         </label>
       </div>
 
     </div>
   </div>
-  <button class="btn btn-primary"><a href="/colors">Back</a></button>
-  <button class="btn btn-primary"><a href="#0">Done</a></button>
+  <button class="btn btn-primary">Done</button>
 </form>
+  <button class="btn btn-primary">Back</button>
