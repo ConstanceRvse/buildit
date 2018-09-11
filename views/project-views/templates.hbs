@@ -1,6 +1,6 @@
 <h2>Choose a name and your template</h2>
 
-<form action="/process-choose-template" method="POST">
+<form action="/colors/{{ projectItem._id }}" method="POST">
 
   <label>
     Your website's name:
@@ -17,28 +17,28 @@
       <div class="col-sm">
         <label for="template1">
           <img src="../../images/template1.png" />
-          <input type="radio" id="template1" name="template" checked />
+          <input type="radio" id="template1" name="template" value="../../images/template1.png" checked />
         </label>
       </div>
 
       <div class="col-sm">
         <label for="template2">
           <img src="../../images/template2.png" />
-          <input type="radio" id="template2" name="template"/>
+          <input type="radio" id="template2" name="template" value="../../images/template2.png"/>
         </label>
       </div>
 
       <div class="col-sm">
         <label for="template3">
           <img src="../../images/template3.png" />
-          <input type="radio" id="template3" name="template"/>
+          <input type="radio" id="template3" name="template" value="../../images/template3.png"/>
         </label>
       </div>
 
     </div>
   </div>
 
-  <button class="btn btn-outline-primary"><a href="/colors">Next Step</a></button>
-  <button class="btn btn-outline-primary"><a href="/categories">Return</a></button>
-
+  <button class="btn btn-outline-primary">Next Step</button>
 </form>
+
+<button class="btn btn-outline-primary"><a href="/categories">Return</a></button>
