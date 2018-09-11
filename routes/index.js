@@ -9,7 +9,7 @@ router.get('/', (req, res, next) => {
 
 router.get("/settings", (req, res, next) => {
   if(!req.user){
-    req.flash("error", "you have to be logged to visit User Settings!");
+    //req.flash("error", "you have to be logged to visit User Settings!");
     res.redirect("/login");
   } else {
     res.render("settings.hbs");
@@ -25,7 +25,7 @@ router.post("/process-settings", (req, res, next) => {
     { runValidators: true },
   )
   .then(userDoc => {
-    req.flash("success", "settings saved!");
+    //req.flash("success", "settings saved!");
     res.redirect("/");
   })
   .catch(err => next(err));

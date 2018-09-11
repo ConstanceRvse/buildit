@@ -30,6 +30,10 @@ router.get("/categories", (req, res, next) => {
   res.render("project-views/categories.hbs");
 });
 
+router.get("/templates", (req, res, next) => {
+  res.render("project-views/templates.hbs");
+});
+
 router.post("/templates", (req, res, next) => {
   const { category } = req.body;
   const owner = req.user._id;
@@ -89,5 +93,7 @@ router.post("/project-details/:projectId", (req, res, next) => {
   })
   .catch(err => next(err))
 });
+
+
 
 module.exports = router;

@@ -1,7 +1,14 @@
 {{> flash_messages}}
 
-<h4>Welcome back, <b>{{currentUser.fullName}}!</b></h4>
 <h5>{{title}}</h5>
-{{!-- <p>Welcome to {{title}}</p> --}}
 
-<button class="btn btn-primary"><a href="/categories">New project</a></button>
+{{#if currentUser}} 
+  <h3>Welcome back, {{currentUser.fullName}}!</h3>
+  <button class="btn btn-primary"><a href="/categories">New project</a></button>
+  <button class="btn btn-primary"><a href="/my-projects">My Projects</a></button>
+  {{else}}
+  <button class="btn btn-primary"><a href="/login">New project</a></button>
+{{/if}}
+
+
+
