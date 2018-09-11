@@ -4,7 +4,7 @@
 
   <label>
     Your website's name:
-    <input type="text" name="title" placeholder="My website..."/>
+    <input type="text" name="title" placeholder="My website..." required/>
   </label>
   <br/>
 
@@ -41,4 +41,7 @@
   <button class="btn btn-outline-primary">Next Step</button>
 </form>
 
-<button class="btn btn-outline-primary"><a href="/categories">Return</a></button>
+<form action="/categories" method="POST">
+  <input type="hidden" value="{{ projectItem._id }}" name="projectId"/>
+  <button class="btn btn-outline-primary">Return</button>
+</form>

@@ -30,8 +30,14 @@ router.get("/categories", (req, res, next) => {
   res.render("project-views/categories.hbs");
 });
 
-router.get("/templates", (req, res, next) => {
-  res.render("project-views/templates.hbs");
+router.post("/categories", (req, res, next) => {
+  const { projectId } = req.body;
+
+  Project.findByIdAndRemove(projectId)
+    .then(projectDoc => {
+      res.redirect("/categories");
+    })
+    .catch(err => next(err));
 });
 
 router.post("/templates", (req, res, next) => {
@@ -60,6 +66,10 @@ router.post("/colors/:projectId", (req, res, next) => {
       res.render("project-views/colors.hbs");
     })
     .catch(err => next (err));
+});
+
+router.get("/colors/:projectId", (req, res, next) => {
+  res.render("project-views/colors.hbs");
 });
 
 router.post("/fonts/:projectId", (req, res, next) => {
