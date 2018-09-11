@@ -60,11 +60,11 @@ router.post("/colors/:projectId", (req, res, next) => {
 
 router.post("/fonts/:projectId", (req, res, next) => {
   const { projectId } = req.params;
-  const { font } = req.body;
+  const { color } = req.body;
 
   Project.findByIdAndUpdate(
     projectId,
-    { $set: { font } },
+    { $set: { color } },
     { runValidators: true},
   )
   .then(projectDoc => {
