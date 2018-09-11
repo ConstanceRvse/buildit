@@ -74,4 +74,20 @@ router.post("/fonts/:projectId", (req, res, next) => {
   .catch(err => next(err))
 });
 
+router.post("/project-details/:projectId", (req, res, next) => {
+  const { projectId } = req.params;
+  const { font } = req.body;
+
+  Project.findByIdAndUpdate(
+    projectId,
+    { $set: { font } },
+    { runValidators: true},
+  )
+  .then(projectDoc => {
+    res.locals.projectItem = projectDoc;
+    res.render("project-views/project-details.hbs");
+  })
+  .catch(err => next(err))
+});
+
 module.exports = router;
