@@ -33,7 +33,7 @@ router.post("/process-login", (req, res, next) => {
   User.findOne({ email: { $eq: email } })
   .then(userDoc => {
     if(!userDoc){
-      req.flash("error", "Incorrect email. ☠️");
+      //req.flash("error", "Incorrect email. ☠️");
       res.redirect("/login");
       return; 
     }
@@ -41,14 +41,14 @@ router.post("/process-login", (req, res, next) => {
     const { encryptedPassword } = userDoc;
 
     if (!bcrypt.compareSync(originalPassword, encryptedPassword)) {
-        req.flash("error", "Password is wrong! 🔐");
+        //req.flash("error", "Password is wrong! 🔐");
         res.redirect("/login");
         return;
     }
 
     req.logIn(userDoc, () => {
       //req.flash("success", "Logged in successfully! 👍")
-      res.redirect("/my-projects");
+      res.redirect("/");
     });
   })
   .catch(err => next(err));
@@ -56,7 +56,7 @@ router.post("/process-login", (req, res, next) => {
 
 router.get("/logout", (req, res, next) => {
   req.logOut();
-  req.flash("success", "Logged out successfully");
+  //req.flash("success", "Logged out successfully");
   res.redirect("/");
 });
 
