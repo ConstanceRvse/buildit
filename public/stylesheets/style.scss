@@ -47,6 +47,11 @@ header {
 nav a {
   text-decoration: none;
   color: white;
+  padding-top: 15px;
+}
+
+.nav-link {
+  padding-top: 15px;
 }
 
 nav a:hover {
@@ -62,4 +67,19 @@ nav a:hover {
 
 .index-btn {
   text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.home-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-img {
+  width: 60%;
 }
