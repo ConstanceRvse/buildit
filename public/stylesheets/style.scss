@@ -1,11 +1,12 @@
 body {
-  padding: 50px;
+  padding: 70px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #FBFBFB;
 }
 
-a {
-  color: #00B7FF;
-}
+// a {
+//   color: #00B7FF;
+// }
 
 [class$="-message"]{
   border: 3px solid;
@@ -30,4 +31,35 @@ a {
 .btn-primary a {
   color: white;
   text-decoration: none;
+}
+
+header {
+  height: 50px;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  z-index: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+
+.index {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.index-btn {
+  text-align: center;
 }
