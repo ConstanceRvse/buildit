@@ -104,6 +104,15 @@ router.post("/project-details/:projectId", (req, res, next) => {
   .catch(err => next(err))
 });
 
+router.get("/:projectId/delete", (req, res, next) => {
+  const { projectId } = req.params;
+
+  Project.findByIdAndRemove(projectId)
+    .then(projectDoc => {
+      res.redirect("/my-projects")
+    })
+    .catch(err => next(err))
+})
 
 
 module.exports = router;
