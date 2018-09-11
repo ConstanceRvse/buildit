@@ -14,37 +14,33 @@ router.get("/categories", (req, res, next) => {
   res.render("project-views/categories.hbs");
 });
 
-router.post("/process-choose-category", (req, res, next) => {
+router.post("/templates", (req, res, next) => {
   const { category } = req.body;
   const owner = req.user._id;
 
   Project.create({ category, owner })
     .then(projectDoc => {
-      res.redirect("/templates");
+      res.locals.projectItem = projectDoc;
+      res.render("project-views/templates.hbs");
     })
     .catch(err => next(err));
 });
 
-router.post("/process-choose-template", (req, res, next) => {
+router.post("/colors/:projectId", (req, res, next) => {
+  const { projectId } = req.params;
   const { title, template } = req.body;
 
   Project.findByIdAndUpdate(
-    req.project._id,
+    projectId,
     { $set: { title, template } },
-    { runValidators: true },
+    { runValidators: true }
   )
     .then(projectDoc => {
-      res.redirect("/colors");
+      res.render("project-views/colors.hbs");
     })
-    .catch(err => next(err));
+    .catch(err => next (err));
+
 });
 
-router.get("/colors", (req, res, next) => {
-  res.render("project-views/colors.hbs");
-});
-
-router.get("/templates", (req, res, next) => {
-  res.render("project-views/templates.hbs");
-});
 
 module.exports = router;
