@@ -25,6 +25,20 @@ router.post("/process-choose-category", (req, res, next) => {
     .catch(err => next(err));
 });
 
+router.post("/process-choose-template", (req, res, next) => {
+  const { title, template } = req.body;
+
+  Project.findByIdAndUpdate(
+    req.project._id,
+    { $set: { title, template } },
+    { runValidators: true },
+  )
+    .then(projectDoc => {
+      res.redirect("/colors");
+    })
+    .catch(err => next(err));
+});
+
 router.get("/colors", (req, res, next) => {
   res.render("project-views/colors.hbs");
 });
