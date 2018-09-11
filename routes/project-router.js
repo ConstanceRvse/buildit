@@ -52,6 +52,7 @@ router.post("/colors/:projectId", (req, res, next) => {
     { runValidators: true }
   )
     .then(projectDoc => {
+      res.locals.projectItem = projectDoc;
       res.render("project-views/colors.hbs");
     })
     .catch(err => next (err));
@@ -67,6 +68,7 @@ router.post("/fonts/:projectId", (req, res, next) => {
     { runValidators: true},
   )
   .then(projectDoc => {
+    res.locals.projectItem = projectDoc;
     res.render("project-views/fonts.hbs");
   })
   .catch(err => next(err))
