@@ -8,6 +8,11 @@ const router = express.Router();
 
 router.get("/my-projects", (req, res, next) =>{
 
+  if(!req.user) {
+    res.redirect("/login");
+    return;
+  }
+
   Project.find()
   .then(projectResults => {
     res.locals.projectArray = projectResults;
@@ -17,6 +22,12 @@ router.get("/my-projects", (req, res, next) =>{
 });
 
 router.get("/project-details/:projectId", (req, res, next) => {
+
+  if(!req.user) {
+    res.redirect("/login");
+    return;
+  }
+
   const { projectId } = req.params;
 
   Project.findById(projectId)
@@ -27,10 +38,16 @@ router.get("/project-details/:projectId", (req, res, next) => {
 });
 
 router.get("/categories", (req, res, next) => {
+
+  if(!req.user) {
+    res.redirect("/login");
+    return;
+  }
   res.render("project-views/categories.hbs");
 });
 
 router.post("/categories", (req, res, next) => {
+
   const { projectId } = req.body;
 
   Project.findByIdAndRemove(projectId)
@@ -41,6 +58,7 @@ router.post("/categories", (req, res, next) => {
 });
 
 router.post("/templates", (req, res, next) => {
+
   const { category } = req.body;
   const owner = req.user._id;
 
@@ -53,6 +71,13 @@ router.post("/templates", (req, res, next) => {
 });
 
 router.get("/templates/:projectId", (req, res, next) => {
+
+  if(!req.user) {
+    req.flash("error", "You must be logged in to see our rooms.");
+    res.redirect("/login");
+    return;
+  }
+
   const { projectId } = req.params;
   Project.findById(projectId)
   .then(projectDoc => {
@@ -88,6 +113,13 @@ router.post("/colors/:projectId", (req, res, next) => {
 });
 
 router.get("/colors/:projectId", (req, res, next) => {
+
+  if(!req.user) {
+    req.flash("error", "You must be logged in to see our rooms.");
+    res.redirect("/login");
+    return;
+  }
+
   res.locals.projectId = req.params.projectId;
   res.render("project-views/colors.hbs");
 });
@@ -125,6 +157,13 @@ router.post("/project-details/:projectId", (req, res, next) => {
 });
 
 router.get("/:projectId/delete", (req, res, next) => {
+
+  if(!req.user) {
+    req.flash("error", "You must be logged in to see our rooms.");
+    res.redirect("/login");
+    return;
+  }
+
   const { projectId } = req.params;
 
   Project.findByIdAndRemove(projectId)
