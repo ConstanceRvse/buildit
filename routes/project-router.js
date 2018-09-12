@@ -46,24 +46,38 @@ router.post("/templates", (req, res, next) => {
 
   Project.create({ category, owner })
     .then(projectDoc => {
-      res.locals.projectId = projectDoc._id;
+      res.locals.projectItem = projectDoc;
       res.render("project-views/templates.hbs");
     })
     .catch(err => next(err));
 });
 
 router.get("/templates/:projectId", (req, res, next) => {
-  res.locals.projectId = req.params.projectId;
+  const { projectId } = req.params;
+  Project.findById(projectId)
+  .then(projectDoc => {
+  // res.locals.projectId = req.params.projectId;
+  res.locals.projectItem = projectDoc;
   res.render("project-views/templates.hbs");
+  })
+    .catch(err => next(err))
 });
 
 router.post("/colors/:projectId", (req, res, next) => {
   const { projectId } = req.params;
-  const { title, template } = req.body;
+  const { template } = req.body;
+  const changes = { template };
+
+  if (req.body.title) {
+    const { title } = req.body;
+    changes.title = title;
+  }
+
+  // res.send(changes)
 
   Project.findByIdAndUpdate(
     projectId,
-    { $set: { title, template } },
+    { $set: changes },
     { runValidators: true }
   )
     .then(projectDoc => {
