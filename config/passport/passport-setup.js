@@ -3,6 +3,8 @@ const passport = require("passport");
 
 const User = require("../../models/user-model.js");
 
+require("./google-strategy.js");
+
 // serializeUser() defines what user data to save in the session
 // happens when you log in successfully
 passport.serializeUser((userDoc, done) => {
