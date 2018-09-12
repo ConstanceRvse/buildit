@@ -60,7 +60,6 @@ app.use(flash());
 passportSetup(app);
 
 app.use((req, res, next) => {
-  // makes flash messages accessible inside hbs files as messages
   res.locals.messages = req.flash();
   next();
 });
