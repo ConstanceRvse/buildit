@@ -39,6 +39,9 @@ header {
   font-size: 15px;
   z-index: 1; }
 
+.nav-logo {
+  width: 10%; }
+
 nav a {
   text-decoration: none;
   color: #712FF5;
@@ -101,7 +104,7 @@ h2, h4, h5 {
   padding: 0px 40px; }
 
 .footer-img {
-  width: 6%; }
+  width: 8%; }
 
 .footer p {
   color: white;
