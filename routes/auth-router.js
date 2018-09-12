@@ -33,7 +33,7 @@ router.post("/process-login", (req, res, next) => {
   User.findOne({ email: { $eq: email } })
   .then(userDoc => {
     if(!userDoc){
-      //req.flash("error", "Incorrect email. ☠️");
+      req.flash("error", "Incorrect email or password.");
       res.redirect("/login");
       return; 
     }
@@ -41,7 +41,7 @@ router.post("/process-login", (req, res, next) => {
     const { encryptedPassword } = userDoc;
 
     if (!bcrypt.compareSync(originalPassword, encryptedPassword)) {
-        //req.flash("error", "Password is wrong! 🔐");
+        req.flash("error", "Incorrect email or password.");
         res.redirect("/login");
         return;
     }

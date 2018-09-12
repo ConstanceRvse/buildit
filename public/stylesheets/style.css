@@ -1,30 +1,37 @@
 body {
   padding: 70px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica', sans-serif;
   background-color: #FBFBFB; }
 
 [class$="-message"] {
-  border: 3px solid;
-  border-radius: 3px;
-  padding: 10px; }
-
-.success-message {
-  color: chartreuse; }
+  padding: 10px 0px; }
 
 .error-message {
-  color: crimson; }
+  color: #ff145a; }
 
 .fonts-img {
   border: 1px solid lightgray;
   border-radius: 5px; }
 
-.btn-primary a {
+.btn-outline-primary a {
+  text-decoration: none;
+  color: #712FF5; }
+
+.btn-outline-primary a:hover {
+  text-decoration: none;
+  color: white; }
+
+.btn {
+  border-color: #712FF5; }
+
+.btn:hover {
+  background-color: #712FF5;
   color: white;
-  text-decoration: none; }
+  border-color: #712FF5; }
 
 header {
   height: 50px;
-  background-color: #000;
+  background-color: #fcfcfc;
   position: fixed;
   width: 100%;
   top: 0;
@@ -34,15 +41,19 @@ header {
 
 nav a {
   text-decoration: none;
-  color: white;
-  padding-top: 15px; }
+  color: #712FF5;
+  font-family: 'Montserrat', sans-serif; }
 
 .nav-link {
-  padding-top: 15px; }
+  padding-top: 30px; }
 
-nav a:hover {
+.nav-link:hover {
   text-decoration: none;
-  color: lightgrey; }
+  color: #712FF5;
+  font-weight: bolder; }
+
+.nav-item {
+  margin-right: 2%; }
 
 .index {
   text-align: center;
@@ -51,9 +62,20 @@ nav a:hover {
 .index-btn {
   text-align: center; }
 
-h2, h5 {
+.index-h5 {
+  font-weight: 200;
+  font-size: 16px; }
+
+h2, h4, h5 {
   text-align: center;
-  padding: 25px; }
+  font-weight: bold;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif; }
+
+.login-h3 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200; }
 
 .home-page-container {
   display: flex;
@@ -62,5 +84,29 @@ h2, h5 {
 
 .home-page-img {
   width: 60%; }
+
+.google-login {
+  width: 15%; }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #712FF5;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px; }
+
+.footer-img {
+  width: 6%; }
+
+.footer p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

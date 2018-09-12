@@ -1,27 +1,26 @@
-<h2>Log In</h2>
+<h2>Already have an account?</h2>
+<h3 class="login-h3">Log in now.</h3>
 
-{{#each messages}}
-    <div class="{{@key}}-message">
-        {{this}}
-    </div>
-{{/each}}
 
 <form action="/process-login" method="POST">
-  
-  <label>
-    Email:
-    <input type="email" name="email" placeholder="mail@example.com"/>
-  </label>
-  <br/>
+  <div class="form-group"> 
+    <label>Email:</label>
+      <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="mail@example.com"/>
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
 
-  <label>
-    Password:
-    <input type="password" name="originalPassword" placeholder="It's a secret..."/>
-  </label>
-  <br/>
+  <div class="form-group">
+    <label>Password:</label>
+    <input type="password" class="form-control" name="originalPassword" placeholder="It's a secret..."/>
+  </div>
 
-  <button>Log In</button>
+    {{#each messages}}
+        <div class="{{@key}}-message">
+            {{this}}
+        </div>
+    {{/each}}
 
+    <button type="submit" class="btn btn-outline-primary">Log In</button>
 </form>
 
-<a href="/google/login">Log In with Google</a>
+<a href="/google/login"><img class="google-login" src="../../images/btn_google_signin_dark_normal_web@2x.png" alt="login-google"></a>

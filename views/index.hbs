@@ -1,21 +1,35 @@
 
 {{#if currentUser}} 
   <h4 class="index">Welcome back, <b>{{currentUser.fullName}}</b>!</h4>
-    <div class="index-btn">
-      <button class="btn btn-primary"><a href="/categories">New project</a></button>
-      <button class="btn btn-primary"><a href="/my-projects">My Projects</a></button>
-    </div>
+
 {{else}}
-  <div class="index-btn">
-    <button class="btn btn-primary"><a href="/login">New project</a></button>
-  </div>
+    <h4>Hey there!</h4>
 {{/if}}
 
-<h5 class="index">Building a website has never been that easy.</h5>
+<h5 class="index-h5">Building a website has never been that easy.</h5>
 
 <div class="home-page-container">
   <img class="home-page-img" src="../images/hp-img@2x.png" alt="home-page-img">
 </div>
+
+{{#if currentUser}}
+  <div class="index-btn">
+    <button class="btn btn-outline-primary"><a href="/categories">New project</a></button>
+    <button class="btn btn-outline-primary"><a href="/my-projects">My Projects</a></button>
+  </div>
+
+{{else}}
+  <div class="index-btn">
+    <button class="btn btn-outline-primary"><a href="/login">New project</a></button>
+  </div>
+{{/if}}
+
+<div class="footer">
+  <img class="footer-img" src="/images/logo-test-02.svg" alt="logo-buildit">
+  <p>Made with ♡ at IronHack</p>
+</div>
+
+
 
 
 
