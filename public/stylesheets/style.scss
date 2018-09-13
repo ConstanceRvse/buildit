@@ -27,26 +27,27 @@ body {
   // box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.23);
 }
 
-.btn-outline-primary a {
+.btn-primary a {
   text-decoration: none;
-  color: #712FF5;
-  border-color: #712FF5;
+  color: #00FFC3;
+  border-color: #00FFC3;
 }
 
-.btn-outline-primary {
-  color: #712FF5;
-  border-color: #712FF5;
+.btn-primary {
+  color: #white;
+  border-color: #00FFC3;
+  background-color: #00FFC3;
 }
 
-.btn-outline-primary a:hover {
+.btn-primary a:hover {
   text-decoration: none;
   color: white;
 }
 
-.btn-outline-primary:hover {
-  background-color: #712FF5;
+.btn-primary:hover {
+  background-color: rgb(0, 221, 169);
   color: white;
-  border-color: #712FF5;
+  border-color: rgb(0, 221, 169);
 }
 
 header {
