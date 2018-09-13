@@ -1,19 +1,22 @@
-<h2>My projects</h2>
+<div class="wrapper">
 
-<div class="projects-container">
-  <ul>
-    {{#each projectArray}}
-      <li>
-        <img src="{{ this.template }}">
-        <p>{{ this.title }}</p>
-        <a href="/project-details/{{ this._id }}">Details</a>
-        {{!-- <a href="/{{this._id}}/edit">Edit</a> --}}
-        <a href="/{{ this._id }}/delete">Delete this project</a>
-      </li>
-    {{/each}}
-  </ul>
+  <h2>My projects</h2>
+
+  <div class="projects-container">
+    <ul>
+      {{#each projectArray}}
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="../../images/{{this.template}}" alt="template image">
+          <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <a href="/project-details/{{ this._id }}" class="btn btn-outline-primary">Details</a>
+            <a href="/{{ this._id }}/delete" class="btn btn-outline-secondary">Delete this project</a>
+          </div>
+        </div>
+      {{/each}}
+    </ul>
+  </div>
+
+  <a href="/categories" class="btn btn-outline-primary">Add A New Project</a>
+
 </div>
-
-
-<a href="/categories">Add A New Project</a>
-
