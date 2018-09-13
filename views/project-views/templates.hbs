@@ -13,55 +13,64 @@
     </div>
 
 
-    <h3 class="template-h3">Our templates</h3>
+    <h3 class="template-h3">{{projectItem.category}} templates</h3>
 
     <div class="container template-cards">
       <div class="row justify-content-center">
 
       {{#if projectItem.blog}}
-        <div class="card col-sm-3">
-          <label for="blog1">
-            <img class="card-img-top" src="../../images/blog1.png" />
+        <div class="col-sm-3">
+          <div class="card">
+            <label for="blog1">
+              <img class="card-img-top" src="../../images/blog1.png" />
+                <div class="card-body">
+                  <h5 class="card-title">Name1</h5>
+                  <input type="radio" id="blog1" name="template" value="../../images/blog1.png" checked />
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <label for="blog2">
+              <img class="card-img-top" src="../../images/blog2.png" />
               <div class="card-body">
-                <h5 class="card-title">Name1</h5>
-                <input type="radio" id="blog1" name="template" value="../../images/blog1.png" checked />
-            </div>
-          </label>
+                <h5 class="card-title">Name2</h5>
+                <input type="radio" id="blog2" name="template" value="../../images/blog2.png"/>
+              </div>
+            </label>
+          </div>
         </div>
 
-        <div class="card col-sm-3">
-          <label for="blog2">
-            <img class="card-img-top" src="../../images/blog2.png" />
-            <div class="card-body">
-              <h5 class="card-title">Name2</h5>
-              <input type="radio" id="blog2" name="template" value="../../images/blog2.png"/>
-            </div>
-          </label>
+        <div class="col-sm-3">
+          <div class="card">
+            <label for="blog3">
+              <img class="card-img-top" src="../../images/blog3.png" />
+              <div class="card-body">
+                <h5 class="card-title">Name3</h5>
+                <input type="radio" id="blog3" name="template" value="../../images/blog3.png"/>
+              </div>
+            </label>
+          </div>
         </div>
 
-        <div class="card col-sm-3">
-          <label for="blog3">
-            <img class="card-img-top" src="../../images/blog3.png" />
-            <div class="card-body">
-              <h5 class="card-title">Name3</h5>
-              <input type="radio" id="blog3" name="template" value="../../images/blog3.png"/>
-            </div>
-          </label>
-        </div>
-
-        <div class="card col-sm-3">
-          <label for="blog4">
-            <img class="card-img-top" src="../../images/blog4.png" />
-            <div class="card-body">
-              <h5 class="card-title">Name4</h5>
-              <input type="radio" id="blog4" name="template" value="../../images/blog4.png"/>
-            </div>
-          </label>
+        <div class="col-sm-3">
+          <div class="card">
+            <label for="blog4">
+              <img class="card-img-top" src="../../images/blog4.png" />
+              <div class="card-body">
+                <h5 class="card-title">Name4</h5>
+                <input type="radio" id="blog4" name="template" value="../../images/blog4.png"/>
+              </div>
+            </label>
+          </div>
         </div>
       {{/if}}
 
       {{#if projectItem.ecommerce}}
-        <div class="card col-sm-3">
+        <div class="col-sm-3">
+          <div class="card">
             <label for="ecommerce1">
               <img class="card-img-top" src="../../images/ecommerce1.png" />
               <div class="card-body">
@@ -70,8 +79,10 @@
               </div>
             </label>
           </div>
+        </div>
 
-          <div class="card col-sm-3">
+          <div class="col-sm-3">
+            <div class="card">
             <label for="ecommerce2">
               <img class="card-img-top" src="../../images/ecommerce2.png" />
               <div class="card-body">
@@ -80,8 +91,10 @@
               </div>
             </label>
           </div>
+        </div>
 
-          <div class="card col-sm-3">
+          <div class="col-sm-3">
+            <div class="card">
             <label for="ecommerce3">
               <img class="card-img-top" src="../../images/ecommerce3.png" />
               <div class="card-body">
@@ -90,8 +103,10 @@
               </div>
             </label>
           </div>
+        </div>
 
-          <div class="card col-sm-3">
+          <div class="col-sm-3">
+            <div class="card">
             <label for="ecommerce4">
               <img class="card-img-top" src="../../images/ecommerce4.png" />
               <div class="card-body">
@@ -100,10 +115,12 @@
               </div>
             </label>
           </div>
+        </div>
       {{/if}}
 
       {{#if projectItem.portfolio}}
-        <div class="card col-sm-3">
+        <div class="col-sm-3">
+          <div class="card">
             <label for="portfolio1">
               <img class="card-img-top" src="../../images/portfolio1.png" />
               <div class="card-body">
@@ -112,8 +129,10 @@
               </div>
             </label>
           </div>
+        </div>
 
-          <div class="card col-sm-3">
+          <div class="col-sm-3">
+            <div class="card">
             <label for="portfolio2">
               <img class="card-img-top" src="../../images/portfolio2.png" />
               <div class="card-body">
@@ -122,8 +141,10 @@
               </div>
             </label>
           </div>
+        </div>
 
-          <div class="card col-sm-3">
+          <div class="col-sm-3">
+            <div class="card">
             <label for="portfolio3">
               <img class="card-img-top" src="../../images/portfolio3.png" />
               <div class="card-body">
@@ -132,8 +153,10 @@
               </div>
             </label>
           </div>
+        </div>
 
-          <div class="card col-sm-3">
+          <div class="col-sm-3">
+            <div class="card">
             <label for="portfolio4">
               <img class="card-img-top" src="../../images/portfolio4.png" />
               <div class="card-body">
@@ -142,10 +165,12 @@
               </div>
             </label>
           </div>
+        </div>
       {{/if}}
 
       {{#if projectItem.corporate}}
-        <div class="card col-sm-3">
+        <div class="col-sm-3">
+          <div class="card">
             <label for="corporate1">
               <img class="card-img-top" src="../../images/corporate1.png" />
               <div class="card-body">
@@ -154,28 +179,34 @@
             </div>
             </label>
           </div>
+        </div>
 
-          <div class="card col-sm-3">
-            <label for="corporate2">
-              <img class="card-img-top" src="../../images/corporate2.png" />
-              <div class="card-body">
-                <h5 class="card-title">Name</h5>
-                <input type="radio" id="corporate2" name="template" value="../../images/corporate2.png"/>
+          <div class="col-sm-3">
+            <div class="card">
+              <label for="corporate2">
+                <img class="card-img-top" src="../../images/corporate2.png" />
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <input type="radio" id="corporate2" name="template" value="../../images/corporate2.png"/>
+                </div>
+              </label>
             </div>
-            </label>
           </div>
 
-          <div class="card col-sm-3">
+          <div class="col-sm-3">
+            <div class="card">
             <label for="corporate3">
               <img class="card-img-top" src="../../images/corporate3.png" />
               <div class="card-body">
                 <h5 class="card-title">Name</h5>
                 <input type="radio" id="corporate3" name="template" value="../../images/corporate3.png"/>
-            </div>
+              </div>
             </label>
+            </div>
           </div>
 
-          <div class="card col-sm-3">
+          <div class="col-sm-3">
+            <div class="card">
             <label for="corporate4">
               <img class="card-img-top" src="../../images/corporate4.png" />
               <div class="card-body">
@@ -183,6 +214,7 @@
                 <input type="radio" id="corporate4" name="template" value="../../images/corporate4.png"/>
             </div>
             </label>
+          </div>
           </div>
       {{/if}}
 

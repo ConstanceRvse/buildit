@@ -1,41 +1,65 @@
-<h2>Pick a Palette</h2>
+<div class="wrapper">
+  <h2>Pick a Palette</h2>
 
-<form action="/fonts/{{ projectId }}" method="POST">
+<div class="colors-container">
+  <form action="/fonts/{{ projectId }}" method="POST">
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-3">
-      <label for="color1">
-        <img src="../../images/palette1.png">
-        <input type="radio" id="color1" name="color" autocomplete="off" value="../../images/palette1.png" checked />
-      </label>
-    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card">
+          <label for="color1">
+            <img src="../../images/palette1.svg">
+            <div class="card-body">
+              <h5 class="card-title">Color 1</h5>
+              <input type="radio" id="color1" name="color" autocomplete="off" value="../../images/palette1.svg" checked />
+            </div>
+          </label>
+        </div>
+      </div>
 
-    <div class="col-sm-3">
-      <label for="color2">
-        <img src="../../images/palette2.png">
-        <input type="radio" id="color2" name="color" value="../../images/palette2.png">
-      </label>
-    </div>
+      <div class="col-sm-3">
+        <div class="card">
+        <label for="color2">
+          <img src="../../images/palette2.svg">
+          <div class="card-body">
+            <h5 class="card-title">Color 1</h5>
+            <input type="radio" id="color2" name="color" value="../../images/palette2.svg">
+          </div>
+        </label>
+        </div>
+      </div>
 
-    <div class="col-sm-3">
-      <label for="color3">
-        <img src="../../images/palette3.png">
-        <input type="radio" id="color3" name="color" value="../../images/palette3.png">
-      </label>
-    </div>
+      <div class="col-sm-3">
+        <div class="card">
+        <label for="color3">
+          <img src="../../images/palette3.svg">
+          <div class="card-body">
+            <h5 class="card-title">Color 1</h5>
+            <input type="radio" id="color3" name="color" value="../../images/palette3.svg">
+          </div>
+        </label>
+        </div>
+      </div>
 
-    <div class="col-sm-3">
-      <label for="color4">
-        <img src="../../images/palette4.png">
-        <input type="radio" id="color4" name="color" value="../../images/palette4.png">
-      </label>
+      <div class="col-sm-3">
+        <div class="card">
+          <label for="color4">
+            <img src="../../images/palette4.svg">
+            <div class="card-body">
+              <h5 class="card-title">Color 1</h5>
+              <input type="radio" id="color4" name="color" value="../../images/palette4.svg">
+            </div>
+          </label>
+        </div>
+      </div>
     </div>
   </div>
+
+  <button class="btn btn-primary">Next</button>
+
+  </form>
 </div>
 
-<button class="btn btn-primary">Next</button>
-
-</form>
-
-<a href="/templates/{{ projectId }}"><button class="btn btn-primary">Return</button></a>
+  <a href="/templates/{{ projectId }}"><button class="btn btn-secondary">Return</button></a>
+</div>
