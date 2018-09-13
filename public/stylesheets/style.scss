@@ -157,6 +157,17 @@ h2, h4, h5 {
   margin-top: 50px;
 }
 
+.btn-aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.btn-aside button {
+  margin-left: 50px;
+}
+
 .bouton-login a{
   width: 172px;
 }
@@ -367,15 +378,9 @@ h2, h4, h5 {
 
 // FOOTER
 
-<<<<<<< HEAD
-.wrapper {
-    height: calc( 100vh - 50px - 83.88px );
-}
-=======
   .wrapper {
     height: calc( 100vh - 80px - 83.88px );
   }
->>>>>>> 7875284ed05ac51a44f064d3951126b9116764fb
 
 .footer {
   position: relative;
