@@ -150,7 +150,7 @@ h2, h4, h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .bouton-login a{
@@ -189,7 +189,7 @@ h2, h4, h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .bouton-signup a{
@@ -212,6 +212,16 @@ h2, h4, h5 {
 .signup-container form{
   width: 350px;
 }
+
+// SETTINGS
+
+.bouton-settings{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
 
 // CATEGORIES
 
@@ -354,7 +364,7 @@ h2, h4, h5 {
 }
 
 .img-error{
-  width: 35%;
+  width: 30%;
 }
 
 .title-error{
