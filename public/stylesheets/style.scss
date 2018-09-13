@@ -157,6 +157,17 @@ h2, h4, h5 {
   margin-top: 50px;
 }
 
+.btn-aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.btn-aside button {
+  margin-left: 50px;
+}
+
 .bouton-login a{
   width: 172px;
 }
