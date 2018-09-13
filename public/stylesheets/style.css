@@ -126,7 +126,7 @@ h2, h4, h5 {
   text-align: center;
   margin-bottom: 20px; }
 
-.card-img-top {
+.form-container .card-img-top {
   width: 30%; }
 
 .cat-form {
@@ -135,6 +135,17 @@ h2, h4, h5 {
 .return-wrapper {
   display: flex;
   justify-content: center; }
+
+.template-container .card-body {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-style: none; }
+
+.template-container .btn {
+  text-align: center;
+  margin-bottom: 20px; }
 
 .wrapper {
   height: calc( 100vh - 50px - 83.88px); }

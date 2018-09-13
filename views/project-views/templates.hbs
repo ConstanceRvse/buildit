@@ -1,139 +1,153 @@
-<h2>Choose a name and your template</h2>
+<div class="wrapper">
 
-<form action="/colors/{{ projectItem._id }}" method="POST">
+<h2>Choose a name for your template</h2>
 
-  <label>
-    Give a Name to your Website:
-    <input type="text" name="title" placeholder="My Amazing Website"/>
-  </label>
-  <br/>
+<div class="template-container">
+  <form action="/colors/{{ projectItem._id }}" method="POST">
+    <label>
+      Give a Name to your Website:
+      <input type="text" name="title" placeholder="My Amazing Website"/>
+    </label>
 
-  <label>Our templates</label>
-  <br/>
+    <label>Our templates</label>
 
-  <div class="container">
-    <div class="row">
+    <div class="container">
+      <div class="row justify-content-center">
 
-    {{#if projectItem.blog}}
-      <div class="col-sm">
-        <label for="blog1">
-          <img src="../../images/blog1.png" />
-          <input type="radio" id="blog1" name="template" value="../../images/blog1.png" checked />
-        </label>
+      {{#if projectItem.blog}}
+        <div class="col-sm">
+          <label for="blog1">
+            <img src="../../images/blog1.png" />
+            <input type="radio" id="blog1" name="template" value="../../images/blog1.png" checked />
+          </label>
+        </div>
+
+        <div class="col-sm">
+          <label for="blog2">
+            <img src="../../images/blog2.png" />
+            <input type="radio" id="blog2" name="template" value="../../images/blog2.png"/>
+          </label>
+        </div>
+
+        <div class="col-sm">
+          <label for="blog3">
+            <img src="../../images/blog3.png" />
+            <input type="radio" id="blog3" name="template" value="../../images/blog3.png"/>
+          </label>
+        </div>
+
+        <div class="col-sm">
+          <label for="blog4">
+            <img src="../../images/blog4.png" />
+            <input type="radio" id="blog4" name="template" value="../../images/blog4.png"/>
+          </label>
+        </div>
+      {{/if}}
+
+      {{#if projectItem.ecommerce}}
+        <div class="col-sm">
+            <label for="ecommerce1">
+              <img src="../../images/ecommerce1.png" />
+              <input type="radio" id="ecommerce1" name="template" value="../../images/ecommerce1.png" checked />
+            </label>
+          </div>
+
+          <div class="col-sm">
+            <label for="ecommerce2">
+              <img src="../../images/ecommerce2.png" />
+              <input type="radio" id="ecommerce2" name="template" value="../../images/ecommerce2.png"/>
+            </label>
+          </div>
+
+          <div class="col-sm">
+            <label for="ecommerce3">
+              <img src="../../images/ecommerce3.png" />
+              <input type="radio" id="ecommerce3" name="template" value="../../images/ecommerce3.png"/>
+            </label>
+          </div>
+      {{/if}}
+
+      {{#if projectItem.portfolio}}
+        <div class="card col-sm-3">
+            <label for="portfolio1">
+              <img class="card-img-top" src="../../images/portfolio1.png" />
+              <div class="card-body">
+                <h5 class="card-title">Name1</h5>
+                <input type="radio" id="portfolio1" name="template" value="../../images/portfolio1.png" checked />
+              </div>
+            </label>
+          </div>
+
+          <div class="card col-sm-3">
+            <label for="portfolio2">
+              <img class="card-img-top" src="../../images/portfolio2.png" />
+              <div class="card-body">
+                <h5 class="card-title">Name2</h5>
+                <input type="radio" id="portfolio2" name="template" value="../../images/portfolio2.png"/>
+              </div>
+            </label>
+          </div>
+
+          <div class="card col-sm-3">
+            <label for="portfolio3">
+              <img class="card-img-top" src="../../images/portfolio3.png" />
+              <div class="card-body">
+                <h5 class="card-title">Name3</h5>
+                <input type="radio" id="portfolio3" name="template" value="../../images/portfolio3.png"/>
+              </div>
+            </label>
+          </div>
+
+          <div class="card col-sm-3">
+            <label for="portfolio4">
+              <img class="card-img-top" src="../../images/portfolio4.png" />
+              <div class="card-body">
+                <h5 class="card-title">Name4</h5>
+                <input type="radio" id="portfolio4" name="template" value="../../images/portfolio4.png"/>
+              </div>
+            </label>
+          </div>
+      {{/if}}
+
+      {{#if projectItem.corporate}}
+        <div class="col-sm">
+            <label for="corporate1">
+              <img src="../../images/corporate1.png" />
+              <input type="radio" id="corporate1" name="template" value="../../images/corporate1.png" checked />
+            </label>
+          </div>
+
+          <div class="col-sm">
+            <label for="corporate2">
+              <img src="../../images/corporate2.png" />
+              <input type="radio" id="corporate2" name="template" value="../../images/corporate2.png"/>
+            </label>
+          </div>
+
+          <div class="col-sm">
+            <label for="corporate3">
+              <img src="../../images/corporate3.png" />
+              <input type="radio" id="corporate3" name="template" value="../../images/corporate3.png"/>
+            </label>
+          </div>
+
+          <div class="col-sm">
+            <label for="corporate4">
+              <img src="../../images/corporate4.png" />
+              <input type="radio" id="corporate4" name="template" value="../../images/corporate4.png"/>
+            </label>
+          </div>
+      {{/if}}
+
       </div>
-
-      <div class="col-sm">
-        <label for="blog2">
-          <img src="../../images/blog2.png" />
-          <input type="radio" id="blog2" name="template" value="../../images/blog2.png"/>
-        </label>
-      </div>
-
-      <div class="col-sm">
-        <label for="blog3">
-          <img src="../../images/blog3.png" />
-          <input type="radio" id="blog3" name="template" value="../../images/blog3.png"/>
-        </label>
-      </div>
-
-      <div class="col-sm">
-        <label for="blog4">
-          <img src="../../images/blog4.png" />
-          <input type="radio" id="blog4" name="template" value="../../images/blog4.png"/>
-        </label>
-      </div>
-    {{/if}}
-
-    {{#if projectItem.ecommerce}}
-      <div class="col-sm">
-          <label for="ecommerce1">
-            <img src="../../images/ecommerce1.png" />
-            <input type="radio" id="ecommerce1" name="template" value="../../images/ecommerce1.png" checked />
-          </label>
-        </div>
-
-        <div class="col-sm">
-          <label for="ecommerce2">
-            <img src="../../images/ecommerce2.png" />
-            <input type="radio" id="ecommerce2" name="template" value="../../images/ecommerce2.png"/>
-          </label>
-        </div>
-
-        <div class="col-sm">
-          <label for="ecommerce3">
-            <img src="../../images/ecommerce3.png" />
-            <input type="radio" id="ecommerce3" name="template" value="../../images/ecommerce3.png"/>
-          </label>
-        </div>
-    {{/if}}
-
-    {{#if projectItem.portfolio}}
-      <div class="col-sm">
-          <label for="portfolio1">
-            <img src="../../images/portfolio1.png" />
-            <input type="radio" id="portfolio1" name="template" value="../../images/portfolio1.png" checked />
-          </label>
-        </div>
-
-        <div class="col-sm">
-          <label for="portfolio2">
-            <img src="../../images/portfolio2.png" />
-            <input type="radio" id="portfolio2" name="template" value="../../images/portfolio2.png"/>
-          </label>
-        </div>
-
-        <div class="col-sm">
-          <label for="portfolio3">
-            <img src="../../images/portfolio3.png" />
-            <input type="radio" id="portfolio3" name="template" value="../../images/portfolio3.png"/>
-          </label>
-        </div>
-
-        <div class="col-sm">
-          <label for="portfolio4">
-            <img src="../../images/portfolio4.png" />
-            <input type="radio" id="portfolio4" name="template" value="../../images/portfolio4.png"/>
-          </label>
-        </div>
-    {{/if}}
-
-    {{#if projectItem.corporate}}
-      <div class="col-sm">
-          <label for="corporate1">
-            <img src="../../images/corporate1.png" />
-            <input type="radio" id="corporate1" name="template" value="../../images/corporate1.png" checked />
-          </label>
-        </div>
-
-        <div class="col-sm">
-          <label for="corporate2">
-            <img src="../../images/corporate2.png" />
-            <input type="radio" id="corporate2" name="template" value="../../images/corporate2.png"/>
-          </label>
-        </div>
-
-        <div class="col-sm">
-          <label for="corporate3">
-            <img src="../../images/corporate3.png" />
-            <input type="radio" id="corporate3" name="template" value="../../images/corporate3.png"/>
-          </label>
-        </div>
-
-        <div class="col-sm">
-          <label for="corporate4">
-            <img src="../../images/corporate4.png" />
-            <input type="radio" id="corporate4" name="template" value="../../images/corporate4.png"/>
-          </label>
-        </div>
-    {{/if}}
-
     </div>
-  </div>
 
-  <button class="btn btn-primary">Next Step</button>
-</form>
+    <button class="btn btn-primary">Next Step</button>
+  </form>
+</div>
 
 <form action="/categories" method="POST">
   <input type="hidden" value="{{ projectItem }}" name="projectItem"/>
-  <button class="btn btn-primary">Return</button>
+  <button class="btn btn-secondary">Return</button>
 </form>
+</div>
