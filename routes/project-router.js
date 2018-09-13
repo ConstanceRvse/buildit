@@ -92,6 +92,7 @@ router.post("/colors/:projectId", (req, res, next) => {
   const { projectId } = req.params;
   const { template } = req.body;
   const changes = { template };
+  console.log(req.body)
 
   if (req.body.title) {
     const { title } = req.body;
