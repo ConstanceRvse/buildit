@@ -104,8 +104,65 @@ h2, h4, h5 {
 .home-page-img {
   width: 60%; }
 
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 80px auto; }
+
+.bouton-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px; }
+
+.bouton-login a {
+  width: 172px; }
+
 .google-login {
-  width: 15%; }
+  width: 100%; }
+
+.form-group label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px; }
+
+.form-group {
+  width: 100%; }
+
+.login-container form {
+  width: 350px; }
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 80px auto; }
+
+.bouton-signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px; }
+
+.bouton-signup a {
+  width: 172px; }
+
+.google-login {
+  width: 100%; }
+
+.form-group label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px; }
+
+.form-group {
+  width: 100%; }
+
+.signup-container form {
+  width: 350px; }
 
 .form-container {
   width: 1300px;
