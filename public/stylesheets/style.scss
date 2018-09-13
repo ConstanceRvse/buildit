@@ -190,3 +190,38 @@ h2, h4, h5 {
   margin: 0px 50px;
   padding: 15px;
 }
+
+// ERROR PAGE
+.error-page{
+  background-color: #FCFCFC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.img-error{
+  width: 35%;
+}
+
+.title-error{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 90px;
+  font-weight: 500;
+}
+
+.title-error span{
+  color: #712FF5;
+}
+
+.error-p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 33px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.error-p a{
+  color: #00FFC3;
+}
