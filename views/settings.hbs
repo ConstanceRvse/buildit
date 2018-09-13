@@ -1,19 +1,27 @@
-<h2>User Settings</h2>
+<div class="wrapper">
 
-<form action="/process-settings" method="POST">
+  <h2>User Settings</h2>
+  <h3 class="login-h3">Update yours details</h3>
 
-  <label>
-    Full name:
-    <input type="text" name="fullName" value="{{currentUser.fullName}}" placeholder="Your full name"/>
-  </label>
-  <br/>
+  <div class="signup-container">
 
-  <label>
-    Email:
-    <input type="email" name="email" value="{{currentUser.email}}" placeholder="Your email"/>
-  </label>
-  <br/>
+  <form action="/process-settings" method="POST">
+    <div class="form-group">
+      <label>Full name</label>
+      <input type="text" class="form-control" name="fullName" value="{{currentUser.fullName}}" placeholder="Your full name"/>
+    </div>
 
-  <button>Save Settings</button>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" class="form-control" name="email" value="{{currentUser.email}}" placeholder="Your email"/>
+    </div>
 
-</form>
+    <div class="bouton-settings">
+      <button class="btn btn-primary">Save Settings</button>
+    </div>
+
+  </form>
+
+  </div>
+
+</div>
