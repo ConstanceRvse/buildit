@@ -137,8 +137,28 @@ h2, h4, h5 {
 
 // LOGIN FORM
 
-.google-login {
-  width: 15%;
+.login-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 50px auto;
+}
+
+.bouton-login{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.bouton-login a{
+  width: 172px;
+}
+
+.google-login{
+  width: 100%;
 }
 
 // CATEGORIES
