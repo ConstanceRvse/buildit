@@ -87,13 +87,14 @@ nav {
 h2, h4, h5 {
   text-align: center;
   font-weight: bold;
-  padding-top: 25px;
+  padding-top: 15px;
   font-family: 'Montserrat', sans-serif; }
 
-.login-h3 {
+.login-h3, .cat-h3 {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 200; }
+  font-weight: 200;
+  margin-bottom: 15px; }
 
 .home-page-container {
   display: flex;
@@ -105,6 +106,34 @@ h2, h4, h5 {
 
 .google-login {
   width: 15%; }
+
+.form-container {
+  width: 1300px;
+  margin: 0 auto; }
+
+.form-container .row {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.form-container .card {
+  border-style: none;
+  margin-bottom: 20px; }
+
+.form-container .btn {
+  text-align: center; }
+
+.flexos {
+  display: flex;
+  justify-content: space-around; }
+
+.form-container .card-body {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.cat-form {
+  text-align: center; }
 
 .wrapper {
   height: calc( 100vh - 50px - 83.88px); }
