@@ -109,23 +109,24 @@ nav {
   margin: 10px;
 }
 
-.index-h5 {
-  font-weight: 300;
-  font-size: 18px;
-}
-
 h2, h4, h5 {
   text-align: center;
   font-weight: bold;
-  padding-top: 15px;
+  padding-top: 50px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.index-h5 {
+  font-weight: 300;
+  font-size: 18px;
+  padding-top: 15px;
 }
 
 .login-h3, .cat-h3 {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  margin-bottom: 35px;
+  margin-bottom: 70px;
 }
 
 .home-page-container {
@@ -137,8 +138,6 @@ h2, h4, h5 {
 .home-page-img {
   width: 60%;
 }
-
-
 
 // LOGIN FORM
 
@@ -368,9 +367,15 @@ h2, h4, h5 {
 
 // FOOTER
 
+<<<<<<< HEAD
 .wrapper {
     height: calc( 100vh - 50px - 83.88px );
 }
+=======
+  .wrapper {
+    height: calc( 100vh - 80px - 83.88px );
+  }
+>>>>>>> 7875284ed05ac51a44f064d3951126b9116764fb
 
 .footer {
   position: relative;
