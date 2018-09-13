@@ -2,21 +2,24 @@
 
   <h2>My projects</h2>
 
-  <div class="projects-container">
-    <ul>
-      {{#each projectArray}}
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="../../images/{{this.template}}" alt="template image">
-          <div class="card-body">
-            <h5 class="card-title">{{this.title}}</h5>
-            <a href="/project-details/{{ this._id }}" class="btn btn-outline-primary">Details</a>
-            <a href="/{{ this._id }}/delete" class="btn btn-outline-secondary">Delete this project</a>
-          </div>
-        </div>
-      {{/each}}
-    </ul>
+  <div class="project-container">
+    <div class="row">
+      <div class="col-sm-4">
+        <ul>
+          {{#each projectArray}}
+            <div class="card" style="width: 18rem;">
+              <img src="../../images/{{this.template}}" class="card-img-top"  alt="template image">
+              <div class="card-body">
+                <h5 class="card-title">{{this.title}}</h5>
+                <a href="/project-details/{{ this._id }}" class="btn btn-primary">Details</a>
+                <a href="/{{ this._id }}/delete" class="btn btn-secondary">Delete</a>
+              </div>
+            </div>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
   </div>
-
-  <a href="/categories" class="btn btn-outline-primary">Add A New Project</a>
+  <a href="/categories" class="btn btn-primary">Add A New Project</a>
 
 </div>
