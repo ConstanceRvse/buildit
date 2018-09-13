@@ -114,14 +114,15 @@ nav {
 h2, h4, h5 {
   text-align: center;
   font-weight: bold;
-  padding-top: 25px;
+  padding-top: 15px;
   font-family: 'Montserrat', sans-serif;
 }
 
-.login-h3 {
+.login-h3, .cat-h3 {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
+  margin-bottom: 35px;
 }
 
 .home-page-container {
@@ -142,11 +143,49 @@ h2, h4, h5 {
 
 // CATEGORIES
 
-.wrapper {
-  height: calc( 100vh - 50px - 83.88px );
+.form-container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.form-container .row {
+  margin-right: 0px;
+  margin-left: 0px;
+
+}
+
+.form-container .card {
+  border-style: none;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #FCFCFC;
+}
+
+.form-container .btn {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  width: 30%;
+}
+
+.cat-form {
+  text-align: center;
+}
+
+.return-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 // FOOTER
+
+  .wrapper {
+    height: calc( 100vh - 50px - 83.88px );
+  }
 
 .footer {
   position: relative;
