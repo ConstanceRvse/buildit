@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div>
 
 <h2>Choose a name for your template</h2>
 
@@ -225,8 +225,10 @@
   </form>
 </div>
 
-<form action="/categories" method="POST">
-  <input type="hidden" value="{{ projectItem }}" name="projectItem"/>
-  <button class="btn btn-secondary">Return</button>
-</form>
+  <div class="return-wrapper">
+  <form action="/categories" method="POST">
+    <input type="hidden" value="{{ projectItem }}" name="projectItem"/>
+    <button class="btn btn-secondary">Return</button>
+  </form>
+  </div>
 </div>

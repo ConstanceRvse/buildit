@@ -197,7 +197,8 @@ h2, h4, h5 {
 
 .return-wrapper {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 40px; }
 
 .project-title-container {
   display: flex;
@@ -225,7 +226,7 @@ h2, h4, h5 {
 .template-cards .card {
   border-style: none; }
 
-.template-form .btn {
+.template-form {
   text-align: center;
   margin-bottom: 20px; }
 
@@ -251,6 +252,13 @@ h2, h4, h5 {
   align-items: center;
   flex-direction: column;
   border-style: none; }
+
+.colors-container {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.colors-cards {
+  margin-bottom: 40px; }
 
 .wrapper {
   height: calc( 100vh - 50px - 83.88px); }
