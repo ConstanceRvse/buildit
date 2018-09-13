@@ -9,6 +9,10 @@ body {
 [class$="-message"] {
   padding: 10px 0px; }
 
+.index-h4 {
+  margin-top: 50px;
+  font-size: 35px; }
+
 .error-message {
   color: #ff145a; }
 
@@ -42,7 +46,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  font-size: 15px;
+  font-size: 18px;
   z-index: 1; }
 
 .nav-logo {
@@ -50,7 +54,7 @@ header {
   padding: 18px 40px; }
 
 .nav-logo img {
-  width: 50%; }
+  width: 70%; }
 
 nav a {
   text-decoration: none;
@@ -63,24 +67,25 @@ nav {
   background-color: #FCFCFC; }
 
 .nav-link {
-  padding-top: 30px; }
+  padding-top: 37px; }
 
 .nav-link:hover {
   text-decoration: none;
-  color: #712FF5;
+  color: #00FFC3;
   font-weight: bolder; }
 
 .nav-item {
   margin-right: 2%; }
 
-.index h4 {
-  font-size: 25px; }
-
 .index {
   text-align: center; }
 
 .index-btn {
-  text-align: center; }
+  text-align: center;
+  padding: 5px; }
+
+#btn-landing {
+  margin: 10px; }
 
 .index-h5 {
   font-weight: 300;
@@ -262,7 +267,7 @@ h2, h4, h5 {
   left: 0;
   bottom: 0;
   background-color: #712FF5;
-  height: 50px;
+  height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -270,12 +275,12 @@ h2, h4, h5 {
   padding: 0px 40px; }
 
 .footer-img {
-  width: 8%; }
+  width: 10%; }
 
 .footer p {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   margin: 0; }
 
 .features-container {

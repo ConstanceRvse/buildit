@@ -1,10 +1,10 @@
 
 <section>
   {{#if currentUser}} 
-    <h4 class="index">Welcome back, <b>{{currentUser.fullName}}</b>!</h4>
+    <h4 class="index index-h4">Welcome back, <b>{{currentUser.fullName}}</b> !</h4>
 
   {{else}}
-      <h4>Hey there!</h4>
+      <h4 class="index index-h4">Hey there !</h4>
   {{/if}}
 
   <h5 class="index-h5">Building a website has never been that easy.</h5>
@@ -15,8 +15,8 @@
 
   {{#if currentUser}}
     <div class="index-btn">
-      <button class="btn btn-primary"><a href="/categories">New project</a></button>
-      <button class="btn btn-primary"><a href="/my-projects">My Projects</a></button>
+      <button class="btn btn-primary" id="btn-landing"><a href="/categories">New project</a></button>
+      <button class="btn btn-primary" id="btn-landing"><a href="/my-projects">My Projects</a></button>
     </div>
 
   {{else}}
