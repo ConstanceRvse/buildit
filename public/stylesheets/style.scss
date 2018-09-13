@@ -26,12 +26,6 @@ body {
   color: rgb(255, 20, 90);
 }
 
-.fonts-img {
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  // box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.23);
-}
-
 .btn-primary a {
   text-decoration: none;
   color: white;
@@ -253,6 +247,7 @@ h2, h4, h5 {
 
 .card {
   background-color: #FCFCFC;
+  border-style: none;
 }
 
 .form-container .btn {
@@ -286,6 +281,9 @@ h2, h4, h5 {
 
 .project-title {
   padding-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #712FF5;
+  font-size: 20px;
 }
 
 .input-group {
@@ -303,6 +301,7 @@ h2, h4, h5 {
   flex-direction: column;
   border-style: none;
 }
+
 .template-cards .card {
   border-style: none;
 }
@@ -317,6 +316,7 @@ h2, h4, h5 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .form-control, .form-control:focus {
@@ -346,6 +346,30 @@ h2, h4, h5 {
 }
 
 .colors-cards {
+  margin-bottom: 40px;
+}
+
+.colors{
+  margin-bottom: 50px;
+}
+
+// FONTS
+
+.fonts-img {
+  // border-radius: 5px;
+  width: 100%;
+}
+
+.fonts-container .card-body {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-style: none;
+}
+
+.fonts-form {
+  text-align: center;
   margin-bottom: 40px;
 }
 
