@@ -1,24 +1,18 @@
 <div class="wrapper">
-<<<<<<< HEAD
-=======
-  <h2>Already have an account?</h2>
-  <h3 class="login-h3">Log in now.</h3>
->>>>>>> 0bdd6034141f70f1644bd84c5e6aca6b13e4b0f4
 
   <h2>Already have an account?</h2>
   <h3 class="login-h3">Log in now.</h3>
 
-<<<<<<< HEAD
   <div class="login-container">
     <form action="/process-login" method="POST">
       <div class="form-group"> 
-        <label>Email:</label>
+        <label>Email</label>
           <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="mail@example.com"/>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
 
       <div class="form-group">
-        <label>Password:</label>
+        <label>Password</label>
         <input type="password" class="form-control" name="originalPassword" placeholder="It's a secret..."/>
       </div>
 
@@ -36,28 +30,4 @@
 
   </div>
 
-=======
-  <form action="/process-login" method="POST">
-    <div class="form-group"> 
-      <label>Email:</label>
-        <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="mail@example.com"/>
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-
-    <div class="form-group">
-      <label>Password:</label>
-      <input type="password" class="form-control" name="originalPassword" placeholder="It's a secret..."/>
-    </div>
-
-      {{#each messages}}
-          <div class="{{@key}}-message">
-              {{this}}
-          </div>
-      {{/each}}
-
-      <button type="submit" class="btn btn-primary">Log In</button>
-  </form>
-
-  <a href="/google/login"><img class="google-login" src="../../images/btn_google_signin_dark_normal_web@2x.png" alt="login-google"></a>
->>>>>>> 0bdd6034141f70f1644bd84c5e6aca6b13e4b0f4
 </div>
