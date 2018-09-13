@@ -189,7 +189,7 @@ h2, h4, h5 {
 
 .title-error {
   font-family: 'Montserrat', sans-serif;
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 500; }
 
 .title-error span {
@@ -197,8 +197,8 @@ h2, h4, h5 {
 
 .error-p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 33px;
-  line-height: 39px;
+  font-size: 30px;
+  line-height: 35px;
   text-align: center; }
 
 .error-p a {
