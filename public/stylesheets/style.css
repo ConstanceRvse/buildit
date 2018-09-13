@@ -199,6 +199,21 @@ h2, h4, h5 {
   display: flex;
   justify-content: center; }
 
+.project-title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 40px; }
+
+.project-title {
+  padding-right: 10px; }
+
+.input-group {
+  width: 300px; }
+
+.template-cards {
+  margin-bottom: 40px; }
+
 .template-container .card-body {
   justify-content: center;
   display: flex;
@@ -206,7 +221,13 @@ h2, h4, h5 {
   flex-direction: column;
   border-style: none; }
 
-.template-container .btn {
+.template-form .btn {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.template-h3 {
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin-bottom: 20px; }
 
