@@ -222,7 +222,10 @@ h2, h4, h5 {
   flex-direction: column; }
 
 .project-title {
-  padding-right: 10px; }
+  padding-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #712FF5;
+  font-size: 20px; }
 
 .input-group {
   width: 300px; }
@@ -248,7 +251,8 @@ h2, h4, h5 {
   font-size: 22px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: 20px; }
 
 .form-control, .form-control:focus {
   border-style: none;
@@ -273,6 +277,9 @@ h2, h4, h5 {
 
 .colors-cards {
   margin-bottom: 40px; }
+
+.colors {
+  margin-bottom: 50px; }
 
 .fonts-img {
   width: 100%; }
@@ -327,7 +334,7 @@ h2, h4, h5 {
   padding: 15px; }
 
 .features-container img {
-  width: 50%;
+  width: 40%;
   margin-bottom: 30px; }
 
 .features-container h3 {

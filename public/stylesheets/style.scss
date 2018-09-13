@@ -292,6 +292,9 @@ h2, h4, h5 {
 
 .project-title {
   padding-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #712FF5;
+  font-size: 20px;
 }
 
 .input-group {
@@ -324,6 +327,7 @@ h2, h4, h5 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .form-control, .form-control:focus {
@@ -354,6 +358,10 @@ h2, h4, h5 {
 
 .colors-cards {
   margin-bottom: 40px;
+}
+
+.colors{
+  margin-bottom: 50px;
 }
 
 // FONTS
@@ -424,7 +432,7 @@ h2, h4, h5 {
 }
 
 .features-container img{
-  width: 50%;
+  width: 40%;
   margin-bottom: 30px;
 }
 

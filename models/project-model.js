@@ -6,7 +6,7 @@ const projectSchema = new Schema ({
   title: { type: String, default: "My Website", },
   category: {
     type: String,
-    enum: ["blog", "ecommerce", "portfolio", "corporate"] 
+    enum: ["Blog", "Ecommerce", "Portfolio", "Corporate"] 
   }, 
   image: { type: String },
   template: { type: String },
@@ -21,20 +21,20 @@ const projectSchema = new Schema ({
   timestamps: true
 });
 
-projectSchema.virtual("blog").get(function () {
-  return this.category === "blog";
+projectSchema.virtual("Blog").get(function () {
+  return this.category === "Blog";
 });
 
-projectSchema.virtual("ecommerce").get(function () {
-  return this.category === "ecommerce";
+projectSchema.virtual("Ecommerce").get(function () {
+  return this.category === "Ecommerce";
 });
 
-projectSchema.virtual("portfolio").get(function () {
-  return this.category === "portfolio";
+projectSchema.virtual("Portfolio").get(function () {
+  return this.category === "Portfolio";
 });
 
-projectSchema.virtual("corporate").get(function () {
-  return this.category === "corporate";
+projectSchema.virtual("Corporate").get(function () {
+  return this.category === "Corporate";
 });
 
 const Project = mongoose.model("Project", projectSchema);
