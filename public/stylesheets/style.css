@@ -292,7 +292,7 @@ h2, h4, h5 {
   margin-bottom: 50px; }
 
 .fonts-img {
-  width: 100%; }
+  width: 70%; }
 
 .fonts-container .card-body {
   justify-content: center;
@@ -386,8 +386,5 @@ h2, h4, h5 {
 
 .error-p a {
   color: #00FFC3; }
-
-.btn-primary:active {
-  background-color: #00dda9; }
 
 /*# sourceMappingURL=style.css.map */
