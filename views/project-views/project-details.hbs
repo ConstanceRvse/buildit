@@ -1,4 +1,4 @@
-<div class="wrapper details-wrapper">
+<div class="details-wrapper">
   <h2>My Project Details</h2>
   <h3>{{ projectItem.title }}</h3>
 
@@ -6,9 +6,11 @@
     <img src="../../images/test-project-details-01.png"/>
   </div>
 
+  <div class="btn-details">
+    <a class="btn btn-primary" href="/templates/{{projectItem._id}}">Edit</a>
+    <a class="btn btn-secondary" href="/{{ projectItem._id }}/delete">Delete</a>
+  </div>
 
+  <button class="return categories"><a href="/my-projects">< My Projects</a></button>
 
-
-  <a class="btn btn-primary" href="/templates/{{projectItem._id}}">Edit</a>
-  <a class="btn btn-secondary" href="/{{ projectItem._id }}/delete">Delete</a>
 </div>

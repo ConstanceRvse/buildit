@@ -374,6 +374,9 @@ h2, h4, h5 {
 .projects-wrapper h2 {
   margin-bottom: 30px; }
 
+.details-wrapper {
+  text-align: center; }
+
 .details-wrapper h2 {
   text-align: left;
   padding-left: 60px; }
@@ -383,6 +386,10 @@ h2, h4, h5 {
   padding-left: 60px;
   color: #712FF5;
   font-family: 'Montserrat', sans-serif; }
+
+.btn-details .btn {
+  margin: 0px 20px 40px 20px;
+  width: 75px; }
 
 .wrapper {
   height: calc( 100vh - 80px - 83.88px);
@@ -468,6 +475,6 @@ h2, h4, h5 {
   color: #00FFC3; }
 
 .template-preview img {
-  width: 20%; }
+  width: 80%; }
 
 /*# sourceMappingURL=style.css.map */
