@@ -13,7 +13,7 @@ router.get("/my-projects", (req, res, next) =>{
     return;
   }
 
-  Project.find()
+  Project.find({ owner: { $eq: req.user._id } })
   .then(projectResults => {
     res.locals.projectArray = projectResults;
     res.render("project-views/my-projects.hbs");
