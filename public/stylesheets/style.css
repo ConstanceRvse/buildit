@@ -387,4 +387,7 @@ h2, h4, h5 {
 .error-p a {
   color: #00FFC3; }
 
+.btn-primary:active {
+  background-color: #00dda9; }
+
 /*# sourceMappingURL=style.css.map */
