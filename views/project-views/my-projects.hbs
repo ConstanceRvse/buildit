@@ -3,28 +3,28 @@
   <h2>My projects</h2>
 
   <div>
-    <div class="project-container">
-      <div class="row">
-        <div class="col-sm-3">
-          <ul>
-            {{#each projectArray}}
-              <div class="card">
-                <label>
-                  <img class="card-img-top" src="../../images/{{this.template}}" class="card-img-top"  alt="template image">
-                  <div class="card-body">
-                    <h5 class="card-title">{{this.title}}</h5>
-                    <a href="/project-details/{{ this._id }}" class="btn btn-primary">Details</a>
-                    <a href="/{{ this._id }}/delete" class="btn btn-secondary">Delete</a>
-                  </div>
-                </label>
-              </div>
-            {{/each}}
-          </ul>
+    <ul class="container project-container">
+      {{!-- <div> --}}
+        <div class="row">
+          <div class="col-sm-3">
+              {{#each projectArray}}
+                <div class="card">
+                  <label>
+                    <img class="card-img-top" src="../../images/{{this.template}}" class="card-img-top"  alt="template image">
+                    <div class="card-body">
+                      <h6 class="card-title">{{this.title}}</h6>
+                      <div class="details-btn">
+                        <a href="/project-details/{{ this._id }}" class="btn btn-primary">Details</a>
+                        <a href="/{{ this._id }}/delete" class="btn btn-secondary">Delete</a>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              {{/each}}
+          </div>
         </div>
-      </div>
-    </div>
+      {{!-- </div> --}}
+    </ul>
   </div>
-</div>
   <a href="/categories" class="btn btn-primary">Add New Project</a>
-
 </div>

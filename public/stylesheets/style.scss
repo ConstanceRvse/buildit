@@ -384,10 +384,30 @@ h2, h4, h5 {
   margin-bottom: 40px;
 }
 
+// MY PROJECTS
+
+.project-container .card-body {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-style: none;
+}
+
+.project-container h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.details-btn {
+
+}
+
 // FOOTER
 
   .wrapper {
     height: calc( 100vh - 80px - 83.88px );
+    text-align: center;
   }
 
 .footer {
