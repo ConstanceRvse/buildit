@@ -460,9 +460,30 @@ h2, h4, h5 {
   font-weight: bold;
 }
 
+.project-container a {
+  margin: 10px;
+}
+
+.projects-wrapper {
+  text-align: center;
+  min-height: 80vh;
+}
+
+.projects-btn {
+  margin-bottom: 40px;
+}
+
+.projects-wrapper .card {
+  margin-bottom: 20px;
+}
+
+.projects-wrapper h2 {
+  margin-bottom: 30px;
+}
+
 // FOOTER -------------------------------
 
-  .wrapper {
+.wrapper {
     height: calc( 100vh - 80px - 83.88px );
     text-align: center;
   }
