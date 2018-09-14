@@ -198,6 +198,12 @@ h2, h4, h5 {
   align-items: center;
   margin-top: 50px; }
 
+.fond-categories {
+  background-image: url("../images/fond-categories-02.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .form-container {
   width: 1300px;
   margin: 0 auto; }
@@ -228,6 +234,12 @@ h2, h4, h5 {
   display: flex;
   justify-content: center;
   margin-bottom: 40px; }
+
+.fond-templates {
+  background-image: url("../images/fond-template-03.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .project-title-container {
   display: flex;
@@ -291,6 +303,12 @@ h2, h4, h5 {
 
 .categories {
   margin-bottom: 40px; }
+
+.fond-colors {
+  background-image: url("../images/fond-colors-04.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .colors-container .card-body {
   justify-content: center;
