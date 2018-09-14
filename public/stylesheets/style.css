@@ -10,7 +10,7 @@ body {
   padding: 10px 0px; }
 
 .index-h4 {
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 45px; }
 
 .error-message {
@@ -282,6 +282,9 @@ h2, h4, h5 {
 .return a {
   text-decoration: none;
   color: #712FF5; }
+
+.categories {
+  margin-bottom: 40px; }
 
 .colors-container .card-body {
   justify-content: center;
