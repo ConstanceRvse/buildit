@@ -22,6 +22,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.fond-settings {
+  background-image: url("../images/fond-settings-05.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .btn-primary a {
   text-decoration: none;
   color: white;
