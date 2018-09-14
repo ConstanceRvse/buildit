@@ -1,11 +1,14 @@
-<h2>{{ projectItem.title }}</h2>
-<h3>{{ projectItem.category }}</h3>
+<div class="wrapper details-wrapper">
+  <h2>My Project Details</h2>
+  <h3>{{ projectItem.title }}</h3>
 
-<img src="{{ projectItem.template }}"/>
+  <div class="template-preview">
+    
+  </div>
 
-<img src="{{ projectItem.color }}">
 
-<img src="{{ projectItem.font }}">
 
-<a href="/templates/{{projectItem._id}}">Edit Project</a>
-<a href="/{{ projectItem._id }}/delete">Delete Project</a>
+
+  <a class="btn btn-primary" href="/templates/{{projectItem._id}}">Edit</a>
+  <a class="btn btn-secondary" href="/{{ projectItem._id }}/delete">Delete</a>
+</div>

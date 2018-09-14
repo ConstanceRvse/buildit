@@ -368,6 +368,16 @@ h2, h4, h5 {
 .projects-wrapper h2 {
   margin-bottom: 30px; }
 
+.details-wrapper h2 {
+  text-align: left;
+  padding-left: 60px; }
+
+.details-wrapper h3 {
+  text-align: left;
+  padding-left: 60px;
+  color: #712FF5;
+  font-family: 'Montserrat', sans-serif; }
+
 .wrapper {
   height: calc( 100vh - 80px - 83.88px);
   text-align: center; }
