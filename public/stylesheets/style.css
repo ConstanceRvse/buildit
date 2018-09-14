@@ -16,6 +16,12 @@ body {
 .error-message {
   color: #ff145a; }
 
+.main {
+  background-image: url("../images/test-fond.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .btn-primary a {
   text-decoration: none;
   color: white;
@@ -298,7 +304,7 @@ h2, h4, h5 {
   margin-bottom: 20px; }
 
 .colors-cards {
-  margin-bottom: 40px; }
+  margin-bottom: 28px; }
 
 .colors {
   margin-bottom: 50px; }

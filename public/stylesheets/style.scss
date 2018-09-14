@@ -26,6 +26,13 @@ body {
   color: rgb(255, 20, 90);
 }
 
+.main{
+  background-image: url("../images/test-fond.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 // BUTTONS -------------------------------
 
 .btn-primary a {
