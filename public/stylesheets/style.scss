@@ -341,6 +341,18 @@ h2, h4, h5 {
   color: #712FF5;
 }
 
+.return{
+  font-family: 'Montserrat', sans-serif;
+  color: #712FF5;
+  border: none;
+  background-color:#FCFCFC;
+}
+
+.return a{
+  text-decoration: none;
+  color: #712FF5;
+}
+
 // COLORS
 
 .colors-container .card-body {
@@ -381,7 +393,7 @@ h2, h4, h5 {
 
 .fonts-form {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 // FOOTER
