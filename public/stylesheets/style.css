@@ -11,7 +11,7 @@ body {
 
 .index-h4 {
   margin-top: 50px;
-  font-size: 35px; }
+  font-size: 45px; }
 
 .error-message {
   color: #ff145a; }
@@ -90,9 +90,9 @@ h2, h4, h5 {
   font-family: 'Montserrat', sans-serif; }
 
 .index-h5 {
-  font-weight: 300;
-  font-size: 18px;
-  padding-top: 15px; }
+  font-weight: 200;
+  font-size: 28px;
+  padding-top: 8px; }
 
 .login-h3, .cat-h3 {
   text-align: center;
@@ -224,8 +224,8 @@ h2, h4, h5 {
 .project-title {
   padding-right: 10px;
   font-family: 'Montserrat', sans-serif;
-  color: #712FF5;
-  font-size: 20px; }
+  font-size: 27px;
+  font-weight: 200; }
 
 .input-group {
   width: 300px; }
@@ -264,6 +264,16 @@ h2, h4, h5 {
   font-weight: bold;
   color: #712FF5; }
 
+.return {
+  font-family: 'Montserrat', sans-serif;
+  color: #712FF5;
+  border: none;
+  background-color: #FCFCFC; }
+
+.return a {
+  text-decoration: none;
+  color: #712FF5; }
+
 .colors-container .card-body {
   justify-content: center;
   display: flex;
@@ -293,7 +303,7 @@ h2, h4, h5 {
 
 .fonts-form {
   text-align: center;
-  margin-bottom: 40px; }
+  margin-bottom: 15px; }
 
 .project-container .card-body {
   justify-content: center;
@@ -388,5 +398,8 @@ h2, h4, h5 {
 
 .error-p a {
   color: #00FFC3; }
+
+.btn-primary:active {
+  background-color: #00dda9; }
 
 /*# sourceMappingURL=style.css.map */
