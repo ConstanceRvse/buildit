@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="projects-wrapper">
 
   <h2>My Projects</h2>
 
@@ -6,8 +6,8 @@
     <ul class="container project-container">
       {{!-- <div> --}}
         <div class="row">
-          <div class="col-sm-3">
-              {{#each projectArray}}
+            {{#each projectArray}}
+              <div class="col-sm-3">
                 <div class="card">
                   <label>
                     <img class="card-img-top" src="../../images/{{this.template}}" class="card-img-top"  alt="template image">
@@ -20,11 +20,11 @@
                     </div>
                   </label>
                 </div>
-              {{/each}}
-          </div>
+              </div>
+            {{/each}}
         </div>
       {{!-- </div> --}}
     </ul>
   </div>
-  <a href="/categories" class="btn btn-primary">Add New Project</a>
+  <a href="/categories" class="btn btn-primary projects-btn">Add New Project</a>
 </div>
