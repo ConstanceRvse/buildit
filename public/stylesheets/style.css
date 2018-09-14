@@ -10,11 +10,17 @@ body {
   padding: 10px 0px; }
 
 .index-h4 {
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 45px; }
 
 .error-message {
   color: #ff145a; }
+
+.main {
+  background-image: url("../images/test-fond.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .btn-primary a {
   text-decoration: none;
@@ -75,7 +81,7 @@ nav {
   font-weight: bolder; }
 
 .nav-item {
-  margin-right: 2%; }
+  margin-right: 4%; }
 
 .dropdown-item:active {
   color: #fff;
@@ -283,6 +289,9 @@ h2, h4, h5 {
   text-decoration: none;
   color: #712FF5; }
 
+.categories {
+  margin-bottom: 40px; }
+
 .colors-container .card-body {
   justify-content: center;
   display: flex;
@@ -295,13 +304,13 @@ h2, h4, h5 {
   margin-bottom: 20px; }
 
 .colors-cards {
-  margin-bottom: 40px; }
+  margin-bottom: 28px; }
 
 .colors {
   margin-bottom: 50px; }
 
 .fonts-img {
-  width: 100%; }
+  width: 70%; }
 
 .fonts-container .card-body {
   justify-content: center;

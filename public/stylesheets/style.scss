@@ -18,12 +18,19 @@ body {
 // }
 
 .index-h4{
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 45px;
 }
 
 .error-message {
   color: rgb(255, 20, 90);
+}
+
+.main{
+  background-image: url("../images/test-fond.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 // BUTTONS -------------------------------
@@ -102,7 +109,7 @@ nav {
 }
 
 .nav-item {
-  margin-right: 2%;
+  margin-right: 4%;
 }
 
 .dropdown-item:active {
@@ -370,6 +377,10 @@ h2, h4, h5 {
   color: #712FF5;
 }
 
+.categories{
+  margin-bottom: 40px;
+}
+
 // COLORS -------------------------------
 
 .colors-container .card-body {
@@ -386,7 +397,7 @@ h2, h4, h5 {
 }
 
 .colors-cards {
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .colors{
@@ -397,7 +408,7 @@ h2, h4, h5 {
 
 .fonts-img {
   // border-radius: 5px;
-  width: 100%;
+  width: 70%;
 }
 
 .fonts-container .card-body {
@@ -428,6 +439,7 @@ h2, h4, h5 {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 .project-container a {
   margin: 10px;
 }
@@ -449,6 +461,8 @@ h2, h4, h5 {
   margin-bottom: 30px;
 }
 
+=======
+>>>>>>> cebde5702bb4c1a7a081da599aeb04da11a89095
 // FOOTER -------------------------------
 
 .wrapper {
